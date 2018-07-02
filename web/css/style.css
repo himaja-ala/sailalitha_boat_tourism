@@ -763,7 +763,7 @@ i.fa.fa-quote-right{
 }
 
 .agile-news-img2{
-    background: url(../images/kolluruhust_pakage.jpg) no-repeat 0px 0px ;
+    background: url(../images/gallery/IMG_2349.jpg) no-repeat 0px 0px ;
     background-size: cover;
     min-height: 300px;
 }
@@ -832,7 +832,7 @@ i.fa.fa-quote-right{
 .modal-body p{
     margin: 1em 0 0 0;
     font-size: .875em;
-    color: #999999;
+    color: black;
     line-height: 1.8em;
 }
 /*-- //modal --*/
@@ -1925,4 +1925,21 @@ span.sicon p {
 }
 .centeralign {
     align: center;
+}
+.close-circle {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 12px;
+    line-height: 1.428571429;
+    border-radius: 15px;
+}
+.close-circle.close-lg {
+    width: 50px;
+    height: 50px;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.33;
+    border-radius: 25px;
 }

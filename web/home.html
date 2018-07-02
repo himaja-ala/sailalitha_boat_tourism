@@ -12,7 +12,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <meta charset="utf-8">
 <meta name="keywords" content="Global Tours Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- bootstrap-css -->
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <!--// bootstrap-css -->
@@ -32,10 +33,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- //font -->
 <script src="js/jquery-1.11.1.min.js"></script>
 <script src="js/bootstrap.js"></script>
+    <script src="js/app.js"></script>
+    <?php include 'mailer.php';?>
 <script type="text/javascript">
-	jQuery(document).ready(function($) {
+    jQuery(document).ready(function($) {
         $("#pID").load("papikondalu_details.html");
-        $("#bID").load("bhadrachalam_details.html");
+        $("#bID").load("bhadrachalam_2day_package.html");
+        $("#b1dayID").load("bhadrachalam_details.html");
+
         $("#kID").load("kolluru_details.html");
         $(".scroll").click(function(event){
 			event.preventDefault();
@@ -141,7 +146,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 				</div>
 				<div class="header-right">
-					<p><i class="fa fa-phone" aria-hidden="true"></i> +91 9492173090</p>
+					<p><i class="fa fa-phone" aria-hidden="true"></i>K. Murali Krishna :: +91 9492173090, +91 9666912777  </p>
 				</div>
 				<div class="clearfix"> </div>
 			</div>
@@ -187,7 +192,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<h2>About Us</h2>
 				</div>
 				<div class="w3ls-about-info">
-					<p>Sai Lalitha Boat Tourism is a pioneer in providing tourism and travel services to highly popular tourist destinations in and around Rajahmundry. Started in the year 2004, we have been providing services to Papikondalu and Bhadrachalam by River Cruises.</p>
+					<p>Sai Lalitha Boat Tourism is a pioneer in providing tourism and travel services to highly popular tourist destinations in and around Rajahmundry. Started in the year 2013, we have been providing services to Papikondalu and Bhadrachalam by River Cruises.</p>
 					<div class="w3ls-about-grids">
 						<div class="col-md-3 w3ls-about-grid">
 							<img src="images/aboutus1.jpg" alt="" />
@@ -236,13 +241,25 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 						</div>
 						<div class="col-sm-8 agile-news-img-info">
-							<h5><a href="#" data-toggle="modal" data-target="#myModalBhadrachalam">Bhadrachalam</a></h5>
+							<h5><a href="#" data-toggle="modal" data-target="#myModalBhadrachalam">Bhadrachalam 2 days Package</a></h5>
 							<div class="agileits-w3layouts-border"> </div>
 							<p>Bhadrachalam is a major pilgrim town situated on the banks of Godavari River in Telangana in Southern India.The main attraction is the temple of Sri Ram built by Kancharla Gopanna popularly known as Bhakta Ramadas in 1630 AD.This holy town with beautiful landscapes provided by River Godavari attracts several devotees throughout the year. This holy river houses most of the sacred shrines of the town in and around its banks. </p>
 
 						</div>
 						<div class="clearfix"> </div>
 					</div>
+                    <div class="col-md-6 agile-news-right-info">
+                        <div class="col-sm-4 agile-news-img agile-news-img1">
+
+                        </div>
+                        <div class="col-sm-8 agile-news-img-info">
+                            <h5><a href="#" data-toggle="modal" data-target="#myModalBhadrachalam1daypkg">Bhadrachalam 1 day Package</a></h5>
+                            <div class="agileits-w3layouts-border"> </div>
+                            <p>Bhadrachalam is a major pilgrim town situated on the banks of Godavari River in Telangana in Southern India.The main attraction is the temple of Sri Ram built by Kancharla Gopanna popularly known as Bhakta Ramadas in 1630 AD.This holy town with beautiful landscapes provided by River Godavari attracts several devotees throughout the year. This holy river houses most of the sacred shrines of the town in and around its banks. </p>
+
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
 					<div class="col-md-6 agile-news-right-info">
 						<div class="col-sm-4 agile-news-img2">
 
@@ -280,14 +297,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 					<div class="col-md-4 agileits-services-grid">
 						<i class="fa fa-credit-card" aria-hidden="true"></i>
-						<h4>Pick up & Drop</h4>
-						<p>Will pick customers from the bus stand or railways station and drop them back after trip</p>
+						<h4>Pick up </h4>
+						<p>Will pick customers from the bus stand or railways station</p>
 					</div>
 					<div class="col-md-4 agileits-services-grid">
 						<i class="fa fa-gift" aria-hidden="true"></i>
 						<h4>Food & Beverages</h4>
-						<p>Will provide food customers chosen veg/ non veg</p>
+						<p>Will provide Breakfast, Veg Lunch , Tea & Snacks.</p>
+                        <p>(If required, Non-Veg will be charged separately)</p>
 					</div>
+                    <div class="col-md-4 agileits-services-grid">
+                        <i class="fa fa-gift" aria-hidden="true"></i>
+                        <h4>Lodging</h4>
+                        <p>Will provide rooms & freshup.</p>
+                    </div>
 					<!--<div class="col-md-4 agileits-services-grid">
 						<i class="fa fa-plane" aria-hidden="true"></i>
 						<h4>Donec posuere</h4>
@@ -594,6 +617,22 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 		</div>
 	</div>
+    <div class="modal about-modal fade" id="myModalBhadrachalam1daypkg" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+                </div>
+                <div class="modal-body">
+                    <div class="agileits-w3layouts-info">
+
+                        <p id="b1dayID"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 	<div class="modal about-modal fade" id="myModalKolluru" tabindex="-1" role="dialog">
 		<div class="modal-dialog modal-lg" role="document">
 			<div class="modal-content">
@@ -742,7 +781,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- //subscribe -->
 	<!-- map -->
 	<div class="map">
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122103.71123631751!2d81.73631711158922!3d16.98728673817864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a37a3f2440c9fff%3A0x86b24503e305ca21!2sRajahmundry%2C+Andhra+Pradesh!5e0!3m2!1sen!2sin!4v1529816917473" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d822.239138704464!2d81.77113082917278!3d16.99484499926969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTbCsDU5JzQxLjQiTiA4McKwNDYnMTguMCJF!5e1!3m2!1sen!2sin!4v1530434959091" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 	</div>
 	<!-- //map -->
 	<!-- contact -->
@@ -764,6 +803,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</div>
 							<div class="col-md-10 w3-agile-address-right">
 								<h5>Visit Us</h5>
+								<p>Office Addr. : Opp. Saraswathi Ghat, Godavari River bund, Rajahmundry</p>
 								<p>D.no 51-10-18, Rajendhra nagar. Rajahmundry, 533103</p>
 							</div>
 							<div class="clearfix"> </div>
@@ -774,7 +814,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</div>
 							<div class="col-md-10 w3-agile-address-right">
 								<h5>Mail Us</h5>
-								<p><a href="mailto:info@example.com"> mail@example.com</a></p>
+								<p><a href="mailto:info@example.com"> sailalithaboattourism@gmail.com</a></p>
 							</div>
 							<div class="clearfix"> </div>
 						</div>
@@ -784,18 +824,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</div>
 							<div class="col-md-10 w3-agile-address-right">
 								<h5>Call Us</h5>
-								<p>+91 9492173090</p>
+								<p>K. Murali Krishna :: +91 9492173090, +91 9666912777</p>
 							</div>
 							<div class="clearfix"> </div>
 						</div>
 					</div>
 					<div class="col-lg-7 contact-form">
-						<form action="#" method="post">
-							<input type="text" name="First Name" placeholder="First Name" required="">
-							<input class="email" name="Last Name" type="text" placeholder="Last Name" required="">
-							<input type="text" name="Number" placeholder="Mobile Number" required="">
-							<input class="email" name="Email" type="email" placeholder="Email" required="">
-							<textarea name="Message" placeholder="Message" required=""></textarea>
+                        <div id="form-messages"></div>
+						<form action="#" method="post" id="sendMailForm">
+							<input id="name" type="text" name="First Name" placeholder="First Name" required="">
+							<input id="lastname" class="email" name="Last Name" type="text" placeholder="Last Name" required="">
+							<input id="mobile" type="text" name="Number" placeholder="Mobile Number" required="">
+							<input id="email" class="email" name="Email" type="email" placeholder="Email" required="">
+							<textarea id="message" name="Message" placeholder="Message" required=""></textarea>
 							<input type="submit" value="SUBMIT">
 						</form>
 					</div>
